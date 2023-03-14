@@ -4,7 +4,7 @@
     placeholder="Uzayda birşeyler arayın ... 🌌"
     v-model="q" autofocus /></div>
     <div class="listWrapper">
-    <div v-for="item in data">
+    <div :key="item" v-for="item in data">
     <ListItem :item="item" />
     </div>
     </div>

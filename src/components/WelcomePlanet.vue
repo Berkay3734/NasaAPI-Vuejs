@@ -10,7 +10,7 @@
 export default {
     name:'WelcomePlanet',
     created(){
-            fetch('https://api.nasa.gov/planetary/apod?api_key=fsQkDqdOmfaVUf7rX3cmcJola8dwGHp9sO2fFJGH')
+            fetch('https://api.nasa.gov/planetary/apod?api_key=UrFmgCJqYp6XwYlqXQmtKnl7BQtVnIb677D6kCVv')
             .then((res)=>{
                 res.json().then((data)=>{
                     this.welcomeData={

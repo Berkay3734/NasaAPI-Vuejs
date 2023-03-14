@@ -5,7 +5,7 @@
         <h4>{{ item.data[0].title }}</h4>
         <p>{{ item.data[0].description }}</p>
         <div class="tags">
-        <div class="tag-item" v-for="tag in item.data[0]?.keywords?.slice(0,3)">
+        <div class="tag-item" :key="tag" v-for="tag in item.data[0]?.keywords?.slice(0,3)">
                 {{ tag }}
         </div>
         </div>
